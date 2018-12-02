@@ -1,5 +1,8 @@
 package dataStructures;
 
+import java.util.Scanner;
+import java.util.LinkedList;
+
 public class Graph {
 	int vertices;
 	int graph [][];
@@ -32,6 +35,11 @@ public class Graph {
 	
 	public static void main(String [] args)
 	{
+		System.out.println("Enter the no of Vertices in Graph:");
+		Scanner in=new Scanner(System.in);
+		String str = in.nextLine().trim();
+		System.out.println(str);
+		
 		Graph graph=new Graph(5);
 		graph.addEdge(1, 2, 5);
 		graph.printGraph();
